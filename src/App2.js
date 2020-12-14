@@ -1,14 +1,12 @@
 import logo from './cupp.png';
 import './App.css';
-import Beef from './animated-beef';
-import Link from 'react-router';
 
 function App() {
   return (
 
     <div className="App">
       <header className="App-header">
-        <Beef />
+        <img src={logo} className="App-logo" alt="spinning ball of sweet, sweet beef" />
         <h1>
           Ventouse de Boeuf
         </h1>
@@ -17,16 +15,14 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://cuppinbeef.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           Please, cup in
         </a>
-        <Link to="./PreCup">Click me</Link>
       </header>
     </div>
-
   );
 }
 

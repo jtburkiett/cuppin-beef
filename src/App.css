@@ -6,10 +6,19 @@
   height: 40vmin;
   pointer-events: none;
 }
+App.a {
+  font-family: 'Rock Salt', cursive;
+}
+App.animated {
+  animation-name: App-logo-bounce2;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-bounce2 1s infinite alternate;
   }
 }
 
@@ -34,5 +43,22 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-40px);
+  }
+}
+@keyframes App-logo-bounce2 {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -250px, 0);
   }
 }
